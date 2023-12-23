@@ -11,4 +11,4 @@ else:
         if age > 19:
             print('WOMAN')
         else:
-            print('GIGL')
+            print('GIRL')

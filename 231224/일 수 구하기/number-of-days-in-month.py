@@ -1,10 +1,14 @@
 n = int(input())
 
 if n == 2:
-    days = 28
-elif n in {4, 6, 9, 11}:
-    days = 30
+	print("28")
+elif n <= 7:
+    if n % 2 == 1:
+        print("31")
+    else:
+        print("30")
 else:
-    days = 31
-
-print (days)
+    if n % 2 == 0:
+        print("31")
+    else:
+        print("30")

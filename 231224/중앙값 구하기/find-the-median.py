@@ -1,9 +1,9 @@
 a,b,c = map(int, input().split())
 
 if a <= b <= c or c <= b <= a:
-    median = b
+    m = b
 elif b <= a <= c or c <= a <= b:
-    median = a
+    m = a
 else:
-    median = c
-print(median)
+    m = c
+print(m)

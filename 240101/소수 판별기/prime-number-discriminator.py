@@ -1,8 +1,14 @@
-n  int(input())
+# 변수 선언 및 입력
+n = int(input())
+satisfied = True
 
-count_val = 0
-for i in range(2,n):
-    if n%i == 0:
-        count_val+=1
+for i in range(2, n):
+	# 1과 자기자신을 제외한 약수가 전혀 없다면 그 수는 소수입니다.
+	if n % i == 0:
+		satisfied = False
 
-print('P' if not count_val else 'C')
+# 출력
+if satisfied == True:
+	print("P")
+else:
+	print("C")

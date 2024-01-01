@@ -6,7 +6,7 @@ for _ in range(5):
         continue
     else:
         sat = False
-
+        break
 if sat == True:
     print('1')
 else:

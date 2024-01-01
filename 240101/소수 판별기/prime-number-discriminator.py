@@ -1,4 +1,4 @@
-n = int(input())
+n  int(input())
 
 count_val = 0
 for i in range(2,n):

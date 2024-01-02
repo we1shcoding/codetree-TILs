@@ -1,5 +1,4 @@
 n = int(input())
-i = 0
 
 for i in range(n):
     for _ in range(i+1):

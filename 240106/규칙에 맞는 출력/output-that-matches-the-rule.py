@@ -1,5 +1,6 @@
 n = int(input())
 
-for i in range(n, 0, -1):
-    row_numbers = [str(j) for j in range(i, n + 1)]
-    print(" ".join(row_numbers))
+for i in range(n):
+	for j in range(i + 1):
+		print(n - i + j, end=" ")
+	print()

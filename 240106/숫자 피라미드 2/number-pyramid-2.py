@@ -1,8 +1,9 @@
 n = int(input())
+cnt = 1
 
-current_number = 1
-
-for i in range(1, n + 1):
-    row_numbers = [str(current_number + j) for j in range(i)]
-    print(" ".join(row_numbers))
-    current_number += i
+# 숫자로 이루어진 삼각형을 출력합니다.
+for i in range(n):
+	for _ in range(i + 1):
+		print(cnt, end=" ")
+		cnt += 1
+	print()

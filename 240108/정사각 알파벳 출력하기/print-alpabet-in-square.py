@@ -1,15 +1,10 @@
-def print_alphabet_square(n):
-    start_char = ord('A')
-    
-    for i in range(n):
-        row = ""
-        for j in range(n):
-            char = chr(start_char + i * n + j)
-            row += char
-        print(row)
-
-# 입력 받기
+# 변수 선언 및 입력
 n = int(input())
-
-# 알파벳 정사각형 출력
-print_alphabet_square(n)
+cnt = 'A'
+	
+# 알파벳을 정사각형 모양으로 출력합니다.
+for _ in range(n):
+	for _ in range(n):
+		print(cnt, end="")
+		cnt = chr(ord(cnt) + 1)
+	print()

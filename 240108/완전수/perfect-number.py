@@ -1,17 +1,14 @@
-n, k=input().split()
+arr = list(map(int, input().split()))  
+start, end = arr[0], arr[1]  
+cnt = 0  
 
-n=int(n)
 
-k=int(k)
+for i in range(start, end + 1):  
+    complete = 0  
+    for j in range(1, i):  
+        if i % j == 0:  
+            complete += j  
+    if complete == i:  
+        cnt += 1  
 
-a=0
-
-sum=0
-
-for i in range(n,k+1):
-    for j in range(1,i):
-        if i%j==0:
-            a+=j
-    if i==a:
-        sum+=1
-print(sum)
+print(cnt)

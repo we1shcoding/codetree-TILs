@@ -1,13 +1,6 @@
-# 10개의 문자를 저장할 배열 생성
-char_array = []
+# 배열을 구현하여 주어진 수를 입력받습니다.
+arr = list(input().split())
 
-# 10개의 문자 입력받기
-input_chars = input().split()
-
-# 입력받은 문자를 배열에 저장
-for char in input_chars:
-    char_array.append(char)
-
-# 배열의 문자를 거꾸로 출력
-reversed_chars = char_array[::-1]
-print(''.join(reversed_chars))
+# 9부터 0까지의 인덱스에 주어진 문자를 차례대로 출력합니다.
+for i in range(9, -1, -1):
+	print(arr[i], end="")

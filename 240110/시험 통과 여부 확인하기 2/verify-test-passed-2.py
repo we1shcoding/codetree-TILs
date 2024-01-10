@@ -1,15 +1,15 @@
 n = int(input())
-grade_2 = []
-cnt = 0
+pass_cnt = 0
 
-for i in range(n):
-    grade = list(map(int, input().split()))
-    grade_2.append(grade)
+for _ in range(n):
+    arr = list(map(int, input().split()))
+    sum_val = sum(arr)
+    avg = sum_val // 4
 
-for i in range(n):
-    if sum(grade_2[i]) / 4>= 60:
+    if avg >= 60:
         print('pass')
-        cnt += 1
+        pass_cnt += 1
     else:
         print('fail')
-print(cnt)
+
+print(pass_cnt)

@@ -1,11 +1,14 @@
-numbers = list(map(int, input().split()))
+arr = list(map(int, input().split()))
+sum1 = 0
+sum2 = 0
+cnt = 0
 
-# 짝수 번째로 입력된 값의 합을 구하기
-even_sum = sum(numbers[1::2])
-
-# 3의 배수 번째로 입력된 값의 평균을 구하기
-divisible_by_3_values = numbers[2::3]
-average_divisible_by_3 = sum(divisible_by_3_values) / len(divisible_by_3_values)
-
-# 결과 출력
-print(f"{even_sum} {average_divisible_by_3:.1f}")
+for i in range(10):
+    if (i+1) % 2 == 0:
+        sum1 += arr[i]
+    if (i+1)%3==0:
+        sum2 += arr[i]
+        cnt += 1
+    
+avg = sum2 / cnt
+print(f'{sum1} {avg:.1f}')

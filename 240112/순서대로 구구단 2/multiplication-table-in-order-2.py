@@ -8,7 +8,7 @@ if a <= b:
             print(f'{i} * {j} = {j*i}', end='  ')
             if cnt % 3 == 0:
                 print()
-print()            
+        print()            
             
 else:
     for i in range(a, b-1, -1):
@@ -17,4 +17,4 @@ else:
             print(f'{i} * {j} = {j*i}', end='  ')
             if cnt % 3 == 0:
                 print()
-print()
+        print()

@@ -5,5 +5,5 @@ for i in range(1, 10):
             print(f'{j} * {i} = {i * j}', end = '  ')
         if a>b:
             for j in range(b, a+1):
-                print(f'{j} * {i} = {i * j}', end = '  ')
+                print(f'{i} * {j} = {i * j}', end = '  ')
         print()

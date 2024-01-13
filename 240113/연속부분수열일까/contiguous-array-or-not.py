@@ -1,3 +1,5 @@
+import sys
+
 # 정수 n1과 n2를 입력받습니다.
 n1, n2 = tuple(map(int, input().split()))
 

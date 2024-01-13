@@ -15,4 +15,4 @@ for num in numbers:
 average = total_sum / count
 
 print(total_sum)
-print(average)
+print(f'{average:.1f}')

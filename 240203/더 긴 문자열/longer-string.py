@@ -7,4 +7,4 @@ if len1 > len2:
 elif len2 > len1:
     print(str2, len2)
 else:
-    print(same)
+    print("same")

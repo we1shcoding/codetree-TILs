@@ -1,19 +1,22 @@
-from sys import stdin
-n = int(stdin.readline())
-arr=list(map(int,stdin.readline().split()))
+# 변수 선언 및 입력:
 
-#중복체크 후 최대값 찾기
-#딕셔너리 활용
-check = {}
-for i in arr:
-    if i in check:
-        check[i]+=1
-    else:
-        check[i]=1
+n = int(input())
+nums = list(map(int, input().split()))
 
-result = -1 #1~1000까지의 값임
-for i in check: #key를 순서대로 받음
-    if check[i] == 1:
-        if result < i:
-            result = i
-print(result)
+# 최댓값 찾기
+max_num = -1
+
+for curr_num in nums:
+    # 최대가 될 수 있는 후보입니다.
+    if max_num < curr_num:
+        # 갱신할 수 있는지 확인하기 위해 이 숫자의 등장 빈도를 셉니다.
+        count = 0
+        for elem in nums:
+            if elem == curr_num:
+                count += 1
+        
+        # 이 숫자가 배열에서 유일할때만 갱신합니다.
+        if count == 1:
+            max_num = curr_num
+
+print(max_num)

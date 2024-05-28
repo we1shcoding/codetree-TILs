@@ -14,7 +14,7 @@ public class Main {
         else if (a<b && a<c) {
             System.out.println(a);
         }
-        else {
+        else if (c<b && c<a){
             System.out.println(c);
         }
     }

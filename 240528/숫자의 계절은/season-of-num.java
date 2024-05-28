@@ -13,7 +13,7 @@ public class Main {
             System.out.println("Spring");
         }
         else if(a<=8) {
-            System.out.println("summer");
+            System.out.println("Summer");
         }
         else {
             System.out.println("Fall");

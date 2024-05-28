@@ -6,11 +6,7 @@ public class Main {
         int a,b;
         a = sc.nextInt();
         b =sc.nextInt();
-        if(a>b) {
-        System.out.println(a);
-        }
-        else if (a<b) {
-            System.out.println(b);
-        }
+        int maxnum a>b? a:b;
+        System.out.println(maxnum);
     }
 }

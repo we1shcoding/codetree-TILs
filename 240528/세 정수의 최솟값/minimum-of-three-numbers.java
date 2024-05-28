@@ -8,13 +8,13 @@ public class Main {
         b = sc.nextInt();
         c = sc.nextInt();
 
-        if (b<a && b<c) {
+        if (b<=a && b<=c) {
             System.out.println(b);
         }
-        else if (a<b && a<c) {
+        else if (a<=b && a<=c) {
             System.out.println(a);
         }
-        else if (c<b && c<a){
+        else if (c<=b && c<=a){
             System.out.println(c);
         }
     }

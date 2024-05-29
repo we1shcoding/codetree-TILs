@@ -8,6 +8,7 @@ public class Main {
         n = sc.nextInt();
         while(i <= n) {
             System.out.println("*");
+            i++;
         }
     }
 }

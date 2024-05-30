@@ -8,11 +8,6 @@ public class Main {
         b = sc.nextInt();
         i = a;
 
-     a = sc.nextInt();
-        b = sc.nextInt();
-
-        i = a;
-
         // 출력
         while(i <= b) {
             System.out.print(i + " ");

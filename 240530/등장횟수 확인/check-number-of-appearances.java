@@ -6,7 +6,7 @@ public class Main {
         int a, cnt = 0;
         for(int i = 1; i<=5; i++) {
             a=sc.nextInt();
-            if(i%2==0)
+            if(a%2==0)
             cnt++;
         }
         System.out.print(cnt);

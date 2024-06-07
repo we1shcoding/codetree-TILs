@@ -10,10 +10,9 @@ public class Main {
         for(int i = 1; i<= n; i++) {
             int a;
             a = sc.nextInt();
-            if(a%2==1 && a%3==0) {
+            if(a%2==1 && a%3==0) 
                 sum_val += a;
-            }
-            System.out.println(sum_val);
         }
+        System.out.println(sum_val);
     }
 }

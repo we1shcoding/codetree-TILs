@@ -9,7 +9,7 @@ public class Main {
 
         for(int i = 1; i < n; i++) {
             if(n%i==0)
-                sum+=1;
+                sum+=i;
         }
         if(sum==n)
             System.out.print("P");

@@ -11,7 +11,7 @@ public class Main {
             int a;
             a = sc.nextInt();
             if(a%2==1 && a%3==0) {
-                sum_val += i;
+                sum_val += a;
             }
             System.out.println(sum_val);
         }

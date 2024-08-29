@@ -5,11 +5,6 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         int grade = sc.nextInt();
 
-        if(grade == 100) {
-            System.out.println("pass");
-        }
-        else {
-            System.out.println("failure");
-        }
+        System.out.println(grade == 100 ? "pass" : "failure");
     }
 }

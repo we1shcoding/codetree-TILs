@@ -9,13 +9,13 @@ public class Main {
         if(gender == 0 && age >=19) {
             System.out.println("MAN");
         }
-        else if(gender == 0 && age < 19) {
+        else if(gender == 0 && age <= 19) {
             System.out.println("BOY");
         }
         else if(gender == 1 && age >=19) {
             System.out.println("WOMAN");
         }
-        else if(gender == 0 && age < 19) {
+        else if(gender == 0 && age <= 19) {
             System.out.println("GIRL");
         }
     }

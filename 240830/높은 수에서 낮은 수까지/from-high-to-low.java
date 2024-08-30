@@ -11,7 +11,7 @@ public class Main {
                 System.out.print(i+" ");
             }
         }
-        if(b>=a) {
+        if(b>a) {
             for(int i = b; i>=a; i--) {
                 System.out.print(i+" ");
             }

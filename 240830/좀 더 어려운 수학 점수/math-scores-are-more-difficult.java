@@ -11,7 +11,7 @@ public class Main {
             engB = sc.nextInt();
 // 영어 점수와 상관없이 수학점수가 높다면 더 높은 학생의 이름 출력
 // 수학점수가 같다면 영어점수가 더 높은 학생 이름 출력
-            if(mathA > mathB || (mathA == mathB && mathA > mathB)) {
+            if(mathA > mathB || (mathA == mathB && engA > engB)) {
                 System.out.println("A");
             }
             else {

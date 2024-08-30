@@ -5,7 +5,7 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         int i = 1;
-        while(i<=5) {
+        while(i<=n) {
             System.out.println("*");
             i++;
         }

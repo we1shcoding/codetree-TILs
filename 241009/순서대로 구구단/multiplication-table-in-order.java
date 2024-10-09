@@ -1,21 +1,26 @@
 import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-        // 여기에 코드를 작성해주세요.
         Scanner sc = new Scanner(System.in);
+
+        // a와 b 입력받기
         int a = sc.nextInt();
         int b = sc.nextInt();
 
-        for(int i = 1; i <=9; i++)
-        {
-            if(a<b) {
-                System.out.printf("%d * %d = %d  ",a,i,a*i);
-                System.out.printf("%d * %d = %d\n",b,i,b*i);
+        // a가 b보다 크면 두 값을 교환
+        if (a > b) {
+            int temp = a;
+            a = b;
+            b = temp;
+        }
+
+        // 구구단 출력
+        for (int i = 1; i <= 9; i++) {
+            for (int j = a; j <= b; j++) {
+                System.out.printf("%d * %d = %d  ", j, i, j * i);
             }
-            else {
-                System.out.printf("%d * %d = %d  ",a,i,a*i);
-                System.out.printf("%d * %d = %d\n",b,i,b*i);
-            }
+            System.out.println(); // 각 곱셈 결과를 출력한 후 줄 바꿈
         }
     }
 }

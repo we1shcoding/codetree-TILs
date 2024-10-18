@@ -19,9 +19,9 @@ public class Main {
             if(arr[i] % 3 == 0)
             {
                 sum2+=arr[i];
-                cnt++;
-                avg = (double) sum2/cnt;
+                cnt++;  
             }
+            avg = (double) sum2/cnt;
         }
         System.out.printf("%d %.1f",sum1,avg);
 

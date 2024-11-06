@@ -12,12 +12,13 @@ public class Main {
             int num = sc.nextInt();
             sum+=num;
             cnt++;
+            
         }
-            if(sum >= 70) {
-                avg = (double)sum/cnt;
+        avg = (double)sum/cnt;
+            if(avg >= 70) {
                 System.out.printf("%.1f\n", avg);
             }
-            if(sum <70) {
+            if(avg <70) {
                 avg = (double)sum/cnt;
                 System.out.printf("%.1f\n", avg);
                 System.out.println("fail");

@@ -15,11 +15,11 @@ public class Main {
             
         }
         avg = (double)sum/cnt;
+        
             if(avg >= 70) {
                 System.out.printf("%.1f\n", avg);
             }
             if(avg <70) {
-                avg = (double)sum/cnt;
                 System.out.printf("%.1f\n", avg);
                 System.out.println("fail");
             }
